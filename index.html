@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnoQuiz - Gagnez des récompenses</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>InnoQuiz</h1>
+        <div id="question"></div>
+        <div class="options">
+            <div class="option" onclick="checkAnswer(0)">Option 1</div>
+            <div class="option" onclick="checkAnswer(1)">Option 2</div>
+            <div class="option" onclick="checkAnswer(2)">Option 3</div>
+            <div class="option" onclick="checkAnswer(3)">Option 4</div>
+        </div>
+        <div id="result"></div>
+        <div id="score"></div>
+        <div id="withdraw-form">
+            <label for="phone-number">Entrez votre numéro Moov Money :</label>
+            <input type="text" id="phone-number" placeholder="0102030405">
+            <button id="withdraw-button" onclick="withdraw()">Retirer mes gains</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

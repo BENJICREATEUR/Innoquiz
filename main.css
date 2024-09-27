@@ -1,0 +1,85 @@
+/* Style général pour le corps */
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    font-family: 'Helvetica Neue', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Style pour le conteneur principal du quiz */
+.quiz-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Titre principal */
+h1 {
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+/* Options de réponses */
+.option {
+    background-color: #e0e0e0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.option:hover {
+    background-color: #d0d0d0;
+    border-color: #4CAF50;
+}
+
+/* Bouton de retrait */
+#withdraw-button {
+    padding: 12px 20px;
+    font-size: 1.2rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#withdraw-button:hover {
+    background-color: #45a049;
+}
+
+/* Style du formulaire de retrait */
+#withdraw-form {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#phone-number {
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
